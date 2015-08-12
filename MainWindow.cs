@@ -43,7 +43,7 @@ public partial class MainWindow: Gtk.Window
 			inpSheetName.Text = "";
 		} else {
 			lbWritingStatus.Text = "Success";
-			inpSheetName.Text = result [0] + " Rows and " + result [1] + " Cols";
+			lbSheetInfo.Text = result [0] + " Rows and " + result [1] + " Cols";
 			inpSheetName.Text = "";
 		}
 	}
