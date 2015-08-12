@@ -144,5 +144,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="client_secret.json" />
   </ItemGroup>
 </Project>
