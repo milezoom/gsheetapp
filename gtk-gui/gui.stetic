@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/GSheetApp.exe" internal="true" />
@@ -26,7 +29,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry1">
+          <widget class="Gtk.Entry" id="inpQuery">
             <property name="MemberName" />
             <property name="WidthRequest">425</property>
             <property name="CanFocus">True</property>
@@ -39,13 +42,15 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Button" id="button1">
+          <widget class="Gtk.Button" id="btnExecQuery">
             <property name="MemberName" />
             <property name="WidthRequest">100</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">_ExecuteQuery</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="ExecQuery" />
+            <signal name="Pressed" handler="UpdateQueryStatus" />
           </widget>
           <packing>
             <property name="X">470</property>
@@ -93,7 +98,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label5">
+          <widget class="Gtk.Label" id="lbQueryResult">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">Unknown</property>
           </widget>
@@ -124,7 +129,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Entry" id="entry2">
+          <widget class="Gtk.Entry" id="inpSheetName">
             <property name="MemberName" />
             <property name="WidthRequest">425</property>
             <property name="CanFocus">True</property>
@@ -137,13 +142,15 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Button" id="button2">
+          <widget class="Gtk.Button" id="btnWriteToSheet">
             <property name="MemberName" />
             <property name="WidthRequest">100</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">_Write to Sheet</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="WriteToSheet" />
+            <signal name="Pressed" handler="UpdateWritingStatus" />
           </widget>
           <packing>
             <property name="X">470</property>
@@ -161,7 +168,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label8">
+          <widget class="Gtk.Label" id="lbWritingStatus">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">Unknown</property>
           </widget>
@@ -181,7 +188,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label10">
+          <widget class="Gtk.Label" id="lbSheetInfo">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">Unknown</property>
           </widget>

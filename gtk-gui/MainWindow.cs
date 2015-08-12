@@ -7,9 +7,9 @@ public partial class MainWindow
 	
 	private global::Gtk.Label label1;
 	
-	private global::Gtk.Entry entry1;
+	private global::Gtk.Entry inpQuery;
 	
-	private global::Gtk.Button button1;
+	private global::Gtk.Button btnExecQuery;
 	
 	private global::Gtk.Label label2;
 	
@@ -19,23 +19,23 @@ public partial class MainWindow
 	
 	private global::Gtk.Label label4;
 	
-	private global::Gtk.Label label5;
+	private global::Gtk.Label lbQueryResult;
 	
 	private global::Gtk.HSeparator hseparator1;
 	
 	private global::Gtk.Label label6;
 	
-	private global::Gtk.Entry entry2;
+	private global::Gtk.Entry inpSheetName;
 	
-	private global::Gtk.Button button2;
+	private global::Gtk.Button btnWriteToSheet;
 	
 	private global::Gtk.Label label7;
 	
-	private global::Gtk.Label label8;
+	private global::Gtk.Label lbWritingStatus;
 	
 	private global::Gtk.Label label9;
 	
-	private global::Gtk.Label label10;
+	private global::Gtk.Label lbSheetInfo;
 	
 	private global::Gtk.Label label11;
 
@@ -61,25 +61,25 @@ public partial class MainWindow
 		w1.X = 30;
 		w1.Y = 10;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.entry1 = new global::Gtk.Entry ();
-		this.entry1.WidthRequest = 425;
-		this.entry1.CanFocus = true;
-		this.entry1.Name = "entry1";
-		this.entry1.IsEditable = true;
-		this.entry1.InvisibleChar = '•';
-		this.fixed1.Add (this.entry1);
-		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.entry1]));
+		this.inpQuery = new global::Gtk.Entry ();
+		this.inpQuery.WidthRequest = 425;
+		this.inpQuery.CanFocus = true;
+		this.inpQuery.Name = "inpQuery";
+		this.inpQuery.IsEditable = true;
+		this.inpQuery.InvisibleChar = '•';
+		this.fixed1.Add (this.inpQuery);
+		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.inpQuery]));
 		w2.X = 25;
 		w2.Y = 35;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.button1 = new global::Gtk.Button ();
-		this.button1.WidthRequest = 100;
-		this.button1.CanFocus = true;
-		this.button1.Name = "button1";
-		this.button1.UseUnderline = true;
-		this.button1.Label = global::Mono.Unix.Catalog.GetString ("_ExecuteQuery");
-		this.fixed1.Add (this.button1);
-		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button1]));
+		this.btnExecQuery = new global::Gtk.Button ();
+		this.btnExecQuery.WidthRequest = 100;
+		this.btnExecQuery.CanFocus = true;
+		this.btnExecQuery.Name = "btnExecQuery";
+		this.btnExecQuery.UseUnderline = true;
+		this.btnExecQuery.Label = global::Mono.Unix.Catalog.GetString ("_ExecuteQuery");
+		this.fixed1.Add (this.btnExecQuery);
+		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.btnExecQuery]));
 		w3.X = 470;
 		w3.Y = 35;
 		// Container child fixed1.Gtk.Fixed+FixedChild
@@ -115,11 +115,11 @@ public partial class MainWindow
 		w7.X = 320;
 		w7.Y = 80;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label5 = new global::Gtk.Label ();
-		this.label5.Name = "label5";
-		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
-		this.fixed1.Add (this.label5);
-		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label5]));
+		this.lbQueryResult = new global::Gtk.Label ();
+		this.lbQueryResult.Name = "lbQueryResult";
+		this.lbQueryResult.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.fixed1.Add (this.lbQueryResult);
+		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbQueryResult]));
 		w8.X = 415;
 		w8.Y = 80;
 		// Container child fixed1.Gtk.Fixed+FixedChild
@@ -140,25 +140,25 @@ public partial class MainWindow
 		w10.X = 30;
 		w10.Y = 140;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.entry2 = new global::Gtk.Entry ();
-		this.entry2.WidthRequest = 425;
-		this.entry2.CanFocus = true;
-		this.entry2.Name = "entry2";
-		this.entry2.IsEditable = true;
-		this.entry2.InvisibleChar = '•';
-		this.fixed1.Add (this.entry2);
-		global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.entry2]));
+		this.inpSheetName = new global::Gtk.Entry ();
+		this.inpSheetName.WidthRequest = 425;
+		this.inpSheetName.CanFocus = true;
+		this.inpSheetName.Name = "inpSheetName";
+		this.inpSheetName.IsEditable = true;
+		this.inpSheetName.InvisibleChar = '•';
+		this.fixed1.Add (this.inpSheetName);
+		global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.inpSheetName]));
 		w11.X = 25;
 		w11.Y = 165;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.button2 = new global::Gtk.Button ();
-		this.button2.WidthRequest = 100;
-		this.button2.CanFocus = true;
-		this.button2.Name = "button2";
-		this.button2.UseUnderline = true;
-		this.button2.Label = global::Mono.Unix.Catalog.GetString ("_Write to Sheet");
-		this.fixed1.Add (this.button2);
-		global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.button2]));
+		this.btnWriteToSheet = new global::Gtk.Button ();
+		this.btnWriteToSheet.WidthRequest = 100;
+		this.btnWriteToSheet.CanFocus = true;
+		this.btnWriteToSheet.Name = "btnWriteToSheet";
+		this.btnWriteToSheet.UseUnderline = true;
+		this.btnWriteToSheet.Label = global::Mono.Unix.Catalog.GetString ("_Write to Sheet");
+		this.fixed1.Add (this.btnWriteToSheet);
+		global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.btnWriteToSheet]));
 		w12.X = 470;
 		w12.Y = 165;
 		// Container child fixed1.Gtk.Fixed+FixedChild
@@ -170,11 +170,11 @@ public partial class MainWindow
 		w13.X = 30;
 		w13.Y = 210;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label8 = new global::Gtk.Label ();
-		this.label8.Name = "label8";
-		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
-		this.fixed1.Add (this.label8);
-		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label8]));
+		this.lbWritingStatus = new global::Gtk.Label ();
+		this.lbWritingStatus.Name = "lbWritingStatus";
+		this.lbWritingStatus.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.fixed1.Add (this.lbWritingStatus);
+		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbWritingStatus]));
 		w14.X = 130;
 		w14.Y = 210;
 		// Container child fixed1.Gtk.Fixed+FixedChild
@@ -186,11 +186,11 @@ public partial class MainWindow
 		w15.X = 30;
 		w15.Y = 240;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label10 = new global::Gtk.Label ();
-		this.label10.Name = "label10";
-		this.label10.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
-		this.fixed1.Add (this.label10);
-		global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label10]));
+		this.lbSheetInfo = new global::Gtk.Label ();
+		this.lbSheetInfo.Name = "lbSheetInfo";
+		this.lbSheetInfo.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.fixed1.Add (this.lbSheetInfo);
+		global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbSheetInfo]));
 		w16.X = 165;
 		w16.Y = 240;
 		// Container child fixed1.Gtk.Fixed+FixedChild
@@ -210,5 +210,9 @@ public partial class MainWindow
 		this.DefaultHeight = 316;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.btnExecQuery.Clicked += new global::System.EventHandler (this.ExecQuery);
+		this.btnExecQuery.Pressed += new global::System.EventHandler (this.UpdateQueryStatus);
+		this.btnWriteToSheet.Clicked += new global::System.EventHandler (this.WriteToSheet);
+		this.btnWriteToSheet.Pressed += new global::System.EventHandler (this.UpdateWritingStatus);
 	}
 }
