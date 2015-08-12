@@ -44,7 +44,7 @@ public partial class MainWindow
 		global::Stetic.Gui.Initialize (this);
 		// Widget MainWindow
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString ("GSheetApp");
+		this.Title = "GSheetApp";
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.fixed1 = new global::Gtk.Fixed ();
@@ -55,7 +55,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label1 = new global::Gtk.Label ();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Your Query :");
+		this.label1.LabelProp = "Your Query :";
 		this.fixed1.Add (this.label1);
 		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label1]));
 		w1.X = 30;
@@ -77,7 +77,7 @@ public partial class MainWindow
 		this.btnExecQuery.CanFocus = true;
 		this.btnExecQuery.Name = "btnExecQuery";
 		this.btnExecQuery.UseUnderline = true;
-		this.btnExecQuery.Label = global::Mono.Unix.Catalog.GetString ("_ExecuteQuery");
+		this.btnExecQuery.Label = "_ExecuteQuery";
 		this.fixed1.Add (this.btnExecQuery);
 		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.btnExecQuery]));
 		w3.X = 470;
@@ -85,7 +85,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label2 = new global::Gtk.Label ();
 		this.label2.Name = "label2";
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Query Status :");
+		this.label2.LabelProp = "Query Status :";
 		this.fixed1.Add (this.label2);
 		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label2]));
 		w4.X = 30;
@@ -93,7 +93,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.lbQueryStatus = new global::Gtk.Label ();
 		this.lbQueryStatus.Name = "lbQueryStatus";
-		this.lbQueryStatus.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.lbQueryStatus.LabelProp = "Unknown";
 		this.fixed1.Add (this.lbQueryStatus);
 		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbQueryStatus]));
 		w5.X = 125;
@@ -109,7 +109,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label4 = new global::Gtk.Label ();
 		this.label4.Name = "label4";
-		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Query Result :");
+		this.label4.LabelProp = "Query Result :";
 		this.fixed1.Add (this.label4);
 		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label4]));
 		w7.X = 320;
@@ -117,7 +117,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.lbQueryResult = new global::Gtk.Label ();
 		this.lbQueryResult.Name = "lbQueryResult";
-		this.lbQueryResult.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.lbQueryResult.LabelProp = "Unknown";
 		this.fixed1.Add (this.lbQueryResult);
 		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbQueryResult]));
 		w8.X = 415;
@@ -134,7 +134,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label6 = new global::Gtk.Label ();
 		this.label6.Name = "label6";
-		this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Sheet Filename :");
+		this.label6.LabelProp = "Sheet Filename :";
 		this.fixed1.Add (this.label6);
 		global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label6]));
 		w10.X = 30;
@@ -156,7 +156,7 @@ public partial class MainWindow
 		this.btnWriteToSheet.CanFocus = true;
 		this.btnWriteToSheet.Name = "btnWriteToSheet";
 		this.btnWriteToSheet.UseUnderline = true;
-		this.btnWriteToSheet.Label = global::Mono.Unix.Catalog.GetString ("_Write to Sheet");
+		this.btnWriteToSheet.Label = "_Write to Sheet";
 		this.fixed1.Add (this.btnWriteToSheet);
 		global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.btnWriteToSheet]));
 		w12.X = 470;
@@ -164,7 +164,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label7 = new global::Gtk.Label ();
 		this.label7.Name = "label7";
-		this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Writing Status :");
+		this.label7.LabelProp = "Writing Status :";
 		this.fixed1.Add (this.label7);
 		global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label7]));
 		w13.X = 30;
@@ -172,7 +172,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.lbWritingStatus = new global::Gtk.Label ();
 		this.lbWritingStatus.Name = "lbWritingStatus";
-		this.lbWritingStatus.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.lbWritingStatus.LabelProp = "Unknown";
 		this.fixed1.Add (this.lbWritingStatus);
 		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbWritingStatus]));
 		w14.X = 130;
@@ -180,7 +180,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label9 = new global::Gtk.Label ();
 		this.label9.Name = "label9";
-		this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("Spreadsheet Fileinfo :");
+		this.label9.LabelProp = "Spreadsheet Fileinfo :";
 		this.fixed1.Add (this.label9);
 		global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label9]));
 		w15.X = 30;
@@ -188,7 +188,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.lbSheetInfo = new global::Gtk.Label ();
 		this.lbSheetInfo.Name = "lbSheetInfo";
-		this.lbSheetInfo.LabelProp = global::Mono.Unix.Catalog.GetString ("Unknown");
+		this.lbSheetInfo.LabelProp = "Unknown";
 		this.fixed1.Add (this.lbSheetInfo);
 		global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbSheetInfo]));
 		w16.X = 165;
@@ -196,7 +196,7 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label11 = new global::Gtk.Label ();
 		this.label11.Name = "label11";
-		this.label11.LabelProp = global::Mono.Unix.Catalog.GetString ("(c) 2015 BI Dept.");
+		this.label11.LabelProp = "© 2015 BI Dept.";
 		this.label11.Justify = ((global::Gtk.Justification)(1));
 		this.fixed1.Add (this.label11);
 		global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label11]));

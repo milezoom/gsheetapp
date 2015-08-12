@@ -5,11 +5,11 @@
   </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="../bin/Debug/GSheetApp.exe" internal="true" />
+    <widget-library name="../bin/Release/GSheetApp.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="600 316">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">GSheetApp</property>
+    <property name="Title">GSheetApp</property>
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
@@ -21,7 +21,7 @@
         <child>
           <widget class="Gtk.Label" id="label1">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Your Query :</property>
+            <property name="LabelProp">Your Query :</property>
           </widget>
           <packing>
             <property name="X">30</property>
@@ -47,7 +47,7 @@
             <property name="WidthRequest">100</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">_ExecuteQuery</property>
+            <property name="Label">_ExecuteQuery</property>
             <property name="UseUnderline">True</property>
             <signal name="Clicked" handler="ExecQuery" />
             <signal name="Pressed" handler="UpdateQueryStatus" />
@@ -60,7 +60,7 @@
         <child>
           <widget class="Gtk.Label" id="label2">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Query Status :</property>
+            <property name="LabelProp">Query Status :</property>
           </widget>
           <packing>
             <property name="X">30</property>
@@ -70,7 +70,7 @@
         <child>
           <widget class="Gtk.Label" id="lbQueryStatus">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Unknown</property>
+            <property name="LabelProp">Unknown</property>
           </widget>
           <packing>
             <property name="X">125</property>
@@ -90,7 +90,7 @@
         <child>
           <widget class="Gtk.Label" id="label4">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Query Result :</property>
+            <property name="LabelProp">Query Result :</property>
           </widget>
           <packing>
             <property name="X">320</property>
@@ -100,7 +100,7 @@
         <child>
           <widget class="Gtk.Label" id="lbQueryResult">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Unknown</property>
+            <property name="LabelProp">Unknown</property>
           </widget>
           <packing>
             <property name="X">415</property>
@@ -121,7 +121,7 @@
         <child>
           <widget class="Gtk.Label" id="label6">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Sheet Filename :</property>
+            <property name="LabelProp">Sheet Filename :</property>
           </widget>
           <packing>
             <property name="X">30</property>
@@ -147,7 +147,7 @@
             <property name="WidthRequest">100</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">_Write to Sheet</property>
+            <property name="Label">_Write to Sheet</property>
             <property name="UseUnderline">True</property>
             <signal name="Clicked" handler="WriteToSheet" />
             <signal name="Pressed" handler="UpdateWritingStatus" />
@@ -160,7 +160,7 @@
         <child>
           <widget class="Gtk.Label" id="label7">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Writing Status :</property>
+            <property name="LabelProp">Writing Status :</property>
           </widget>
           <packing>
             <property name="X">30</property>
@@ -170,7 +170,7 @@
         <child>
           <widget class="Gtk.Label" id="lbWritingStatus">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Unknown</property>
+            <property name="LabelProp">Unknown</property>
           </widget>
           <packing>
             <property name="X">130</property>
@@ -180,7 +180,7 @@
         <child>
           <widget class="Gtk.Label" id="label9">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Spreadsheet Fileinfo :</property>
+            <property name="LabelProp">Spreadsheet Fileinfo :</property>
           </widget>
           <packing>
             <property name="X">30</property>
@@ -190,7 +190,7 @@
         <child>
           <widget class="Gtk.Label" id="lbSheetInfo">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Unknown</property>
+            <property name="LabelProp">Unknown</property>
           </widget>
           <packing>
             <property name="X">165</property>
@@ -200,7 +200,7 @@
         <child>
           <widget class="Gtk.Label" id="label11">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">(c) 2015 BI Dept.</property>
+            <property name="LabelProp">© 2015 BI Dept.</property>
             <property name="Justify">Right</property>
           </widget>
           <packing>
