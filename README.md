@@ -1,6 +1,6 @@
 ﻿# GSheetApp
 
-Aplikasi untuk menulis hasil Query Database ke Google Spreadsheet.
+Aplikasi untuk menulis hasil Query Database ke Google Spreadsheet.  
 Menggunakan C# dan GTK# toolkit.
 
 ### Konfigurasi
