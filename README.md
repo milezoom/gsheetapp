@@ -9,5 +9,5 @@ Menggunakan C# dan GTK# toolkit.
 * Untuk Windows : Install GTK# Runtime dari [sini](http://www.mono-project.com/download/#download-win), dibutuhkan untuk GUI dari aplikasinya
 
 ### TODO
-* ___Implementasi fitur untuk menampilkan email user yang telah mengotorisasi penggunaan aplikasi___ (Done)
-* ___Implementasi fitur re-authorization, jika ingin ganti email___ (Done)
+* ~~Implementasi fitur untuk menampilkan email user yang telah mengotorisasi penggunaan aplikasi~~ (Done)
+* ~~Implementasi fitur re-authorization, jika ingin ganti email~~ (Done)
