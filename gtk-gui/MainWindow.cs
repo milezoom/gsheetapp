@@ -38,6 +38,12 @@ public partial class MainWindow
 	private global::Gtk.Label lbSheetInfo;
 	
 	private global::Gtk.Label label11;
+	
+	private global::Gtk.Label label3;
+	
+	private global::Gtk.Label lbEmail;
+	
+	private global::Gtk.Button btnAuthorize;
 
 	protected virtual void Build ()
 	{
@@ -202,6 +208,33 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label11]));
 		w17.X = 470;
 		w17.Y = 275;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.label3 = new global::Gtk.Label ();
+		this.label3.Name = "label3";
+		this.label3.LabelProp = "Authorized as :";
+		this.fixed1.Add (this.label3);
+		global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label3]));
+		w18.X = 30;
+		w18.Y = 270;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.lbEmail = new global::Gtk.Label ();
+		this.lbEmail.Name = "lbEmail";
+		this.lbEmail.LabelProp = "Unknown";
+		this.fixed1.Add (this.lbEmail);
+		global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.lbEmail]));
+		w19.X = 125;
+		w19.Y = 270;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.btnAuthorize = new global::Gtk.Button ();
+		this.btnAuthorize.WidthRequest = 100;
+		this.btnAuthorize.CanFocus = true;
+		this.btnAuthorize.Name = "btnAuthorize";
+		this.btnAuthorize.UseUnderline = true;
+		this.btnAuthorize.Label = "_Reauthorize";
+		this.fixed1.Add (this.btnAuthorize);
+		global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.btnAuthorize]));
+		w20.X = 471;
+		w20.Y = 200;
 		this.Add (this.fixed1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
@@ -214,5 +247,6 @@ public partial class MainWindow
 		this.btnExecQuery.Pressed += new global::System.EventHandler (this.UpdateQueryStatus);
 		this.btnWriteToSheet.Clicked += new global::System.EventHandler (this.WriteToSheet);
 		this.btnWriteToSheet.Pressed += new global::System.EventHandler (this.UpdateWritingStatus);
+		this.btnAuthorize.Clicked += new global::System.EventHandler (this.ReauthorizeClicked);
 	}
 }

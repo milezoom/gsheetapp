@@ -22,10 +22,11 @@ namespace GSheetApp
 		private string[] SCOPE = {
 			DriveService.Scope.Drive + " " +
 			"https://spreadsheets.google.com/feeds " +
-			PlusService.Scope.UserinfoEmail
+			"https://www.googleapis.com/auth/userinfo.email"
 		};
 		private string APPLICATION_NAME = "GSheetApp";
 		private string REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob";
+		private string credentialPath = "";
 		private UserCredential credential;
 		private ClientSecrets secret;
 
@@ -37,11 +38,10 @@ namespace GSheetApp
 			Console.WriteLine ("Secret Saved");
 
 			using (stream) {
-				string credPath = Directory.GetCurrentDirectory ();
-				credPath = Path.Combine (credPath, ".credentials");
+				this.credentialPath = Path.Combine (Directory.GetCurrentDirectory (), ".credentials");
 
 				this.credential = GoogleWebAuthorizationBroker.AuthorizeAsync (
-					secret, SCOPE, "user", CancellationToken.None, new FileDataStore (credPath, true)
+					secret, SCOPE, "user", CancellationToken.None, new FileDataStore (credentialPath, true)
 				).Result;
 			}
 
@@ -144,6 +144,34 @@ namespace GSheetApp
 			} catch (Exception e) {
 				Console.WriteLine (e);
 				return result;
+			}
+		}
+
+		public string getEmail ()
+		{
+			string email = "Unknown";
+			try {
+				PlusService service = this.createPlusService ();
+				PeopleResource.GetRequest people = service.People.Get ("me");
+				var me = people.Execute ();
+				email = me.Emails [0].Value.ToString ();	
+			} catch (Exception e) {
+				Console.WriteLine (e);
+			}
+			return email;
+		}
+
+		public void reauthorize ()
+		{
+			Array.ForEach (Directory.GetFiles (this.credentialPath),
+				delegate(string path) {
+					System.IO.File.Delete (path);
+				}
+			);
+			try {
+				this.createPlusService ();
+			} catch (Exception e) {
+				Console.WriteLine (e);
 			}
 		}
 	}

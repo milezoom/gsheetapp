@@ -209,6 +209,41 @@
             <property name="Y">275</property>
           </packing>
         </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="LabelProp">Authorized as :</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">270</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lbEmail">
+            <property name="MemberName" />
+            <property name="LabelProp">Unknown</property>
+          </widget>
+          <packing>
+            <property name="X">125</property>
+            <property name="Y">270</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnAuthorize">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label">_Reauthorize</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="ReauthorizeClicked" />
+          </widget>
+          <packing>
+            <property name="X">471</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
       </widget>
     </child>
   </widget>

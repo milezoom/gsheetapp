@@ -7,6 +7,7 @@ public partial class MainWindow: Gtk.Window
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
+		lbEmail.Text = MainClass.GetEmail ();
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
@@ -51,5 +52,12 @@ public partial class MainWindow: Gtk.Window
 	protected void UpdateWritingStatus (object sender, EventArgs e)
 	{
 		lbWritingStatus.Text = "Writing To Sheet ....";
+	}
+
+	protected void ReauthorizeClicked (object sender, EventArgs e)
+	{
+		lbEmail.Text = "Reauthorizing ....";
+		MainClass.Reauthorize ();
+		lbEmail.Text = MainClass.GetEmail ();
 	}
 }

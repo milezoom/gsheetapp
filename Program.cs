@@ -29,8 +29,20 @@ namespace GSheetApp
 
 		public static int[] WriteToSheet (string filename)
 		{
-			SpreadsheetInteraction sheetIntegration = new SpreadsheetInteraction ();
-			return sheetIntegration.writeToSheet (queryResult, filename);
+			SpreadsheetInteraction sheetInteraction = new SpreadsheetInteraction ();
+			return sheetInteraction.writeToSheet (queryResult, filename);
+		}
+
+		public static string GetEmail ()
+		{
+			SpreadsheetInteraction sheetInteraction = new SpreadsheetInteraction ();
+			return sheetInteraction.getEmail ();
+		}
+
+		public static void Reauthorize ()
+		{
+			SpreadsheetInteraction sheetInteraction = new SpreadsheetInteraction ();
+			sheetInteraction.reauthorize ();
 		}
 	}
 }
