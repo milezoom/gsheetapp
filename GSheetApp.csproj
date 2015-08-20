@@ -46,35 +46,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eto">
-      <HintPath>packages\Eto.Forms.2.0.7\lib\net40\Eto.dll</HintPath>
-    </Reference>
-    <Reference Include="Eto.Gtk2">
-      <HintPath>packages\Eto.Platform.Gtk.2.0.7\lib\net40\Eto.Gtk2.dll</HintPath>
-    </Reference>
-    <Reference Include="Eto.Gtk3">
-      <HintPath>packages\Eto.Platform.Gtk3.2.0.7\lib\net40\Eto.Gtk3.dll</HintPath>
-    </Reference>
-    <Reference Include="Eto.WinForms">
-      <HintPath>packages\Eto.Platform.Windows.2.0.7\lib\net40\Eto.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Eto.Wpf">
-      <HintPath>packages\Eto.Platform.Wpf.2.0.7\lib\net40\Eto.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Apis.Drive.v2">
-      <HintPath>packages\Google.Apis.Drive.v2.1.9.2.1790\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Drive.v2.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Apis.Plus.v1">
-      <HintPath>packages\Google.Apis.Plus.v1.1.9.2.2420\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Plus.v1.dll</HintPath>
-    </Reference>
     <Reference Include="Google.GData.Client">
       <HintPath>packages\Google.GData.Client.2.2.0.0\lib\Google.GData.Client.dll</HintPath>
     </Reference>
     <Reference Include="Google.GData.Extensions">
       <HintPath>packages\Google.GData.Extensions.2.2.0.0\lib\Google.GData.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Spreadsheets">
-      <HintPath>packages\Google.GData.Spreadsheets.2.2.0.0\lib\Google.GData.Spreadsheets.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
@@ -117,12 +93,36 @@
       <HintPath>packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="MySql.Data">
-      <HintPath>packages\MySql.Data.6.9.7\lib\net40\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Spreadsheets">
+      <HintPath>packages\Google.GData.Spreadsheets.2.2.0.0\lib\Google.GData.Spreadsheets.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto">
+      <HintPath>packages\Eto.Forms.2.0.7\lib\net40\Eto.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto.WinForms">
+      <HintPath>packages\Eto.Platform.Windows.2.0.7\lib\net40\Eto.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto.Wpf">
+      <HintPath>packages\Eto.Platform.Wpf.2.0.7\lib\net40\Eto.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto.Gtk2">
+      <HintPath>packages\Eto.Platform.Gtk.2.0.7\lib\net40\Eto.Gtk2.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto.Gtk3">
+      <HintPath>packages\Eto.Platform.Gtk3.2.0.7\lib\net40\Eto.Gtk3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v2">
+      <HintPath>packages\Google.Apis.Drive.v2.1.9.2.1790\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Drive.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Plus.v1">
+      <HintPath>packages\Google.Apis.Plus.v1.1.9.2.2420\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Plus.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>packages\MySql.Data.6.9.7\lib\net40\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Google.Apis.Core">
       <HintPath>packages\Google.Apis.Core.1.9.3\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll</HintPath>
